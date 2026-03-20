@@ -85,7 +85,7 @@ knitr::include_graphics('images/speciation_continuum.png')
 
 One phenomenon that perfectly illustrates the speciation continuum and provides evidence for ongoing speciation are so-called ring species, in which two reproductively isolated populations living sympatrically (red and brown in Figure \@ref(fig:ringspecies)) are connected by a geographic ring of populations that can interbreed. Such ring species arise when an original population disperses around a geographic barrier, and populations diverge gradually, for example as a consequence of adaptation to local environmental conditions. Once populations come into sympatry again behind the geographic barrier, sufficient differences have accumulated such that populations cannot interbreed with each other anymore.
 
-```{r ringspecies, echo=FALSE, out.width='100%', fig.cap = "A schematic representing a ring species. Individuals are able to successfully reproduce with members of adjacent populations, as indicated by the black arrows. However, as populations disperse around a geographic barrier and diverge gradually, they are unable to reproduce when they come into contact again. This process represents a form of speciation occurring with gene flow."}
+```{r ringspecies, echo=FALSE, out.width='100%', fig.cap = "A schematic representing a ring species. Individuals are able to successfully reproduce with members of adjacent populations, as indicatesd by the black arrows. However, as populations disperse around a geographic barrier and diverge gradually, they are unable to reproduce when they come into contact again. This process represents a form of speciation occurring with gene flow."}
 knitr::include_graphics('images/rings-species.png')
 ```
 
@@ -227,7 +227,7 @@ Friedberg and Rhoads (2000) put this hypothesis to the test (Table 2.1). The old
 | 36 Myr                 |            |         |           |         |          |          |
 +------------------------+------------+---------+-----------+---------+----------+----------+
 
-: Table 2.1: Pseudogenes that Friedberg and Rhoads (2000) detected in different primates (with hamsters as an outgroup). Individual pseudogenes identified in the human genome, along with their age estimates, are listed in rows. Different species with their estimated divergence times from humans are in columns. Symbols indicat the presence (+) or absence (-) of specific pseudogenes in a particular species.
+: Table 2.1: Pseudogenes that Friedberg and Rhoads (2000) detected in different primates (with hamsters as an outgroup). Individual pseudogenes identified in the human genome, along with their age estimates, are listed in rows. Different species with their estimated divergence times from humans are in columns. Symbols indicate the presence (+) or absence (-) of specific pseudogenes in a particular species.
 
 ### Why Homologies Matter
 

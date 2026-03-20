@@ -111,7 +111,7 @@ The cost of virulence can be reduced---and even mostly avoided---if a pathogen i
 
 If a pathogen has a high survivability outside of the host's body, it can linger in the environment and wait for a susceptible individual to pass by---even after the initial host has long perished. For example, anthrax bacteria (*Bacillus anthracis*) form resting spores that can survive in the soil for decades. Hence, a premature host death does not necessarily come at a substantial fitness cost for the pathogen, especially if high pathogen replication leads to the release of large numbers of propagules. Following the same logic, the virulence of intestinal bacteria that can cause disease is directly correlated with the proportion of outbreaks that are waterborne (*i.e.*, transmitted through contaminated water; Figure \@ref(fig:waterb)A). When sanitation is poor and contamination of drinking water common, host mobility becomes secondary to pathogen spread, and transmission is instead facilitated by high rates of pathogen replication with corresponding consequences for virulence.
 
-Costs associated with virulence can also be mitigated through vector-borne transmission, where an intermediate host carries and transmits a pathogen to a susceptible individual. Blood-feeding arthropods are particularly common disease vectors; they transmit many diseases relevant for human health. For example, mosquitoes are intermediate hosts for malaria, dengue, and zika, sand flies transmit leishmaniasis, hemipterans carry Chagas disease, and ticks spread Lyme disease, among many others. A comparison of virulence between diseases with different modes of transmission indicated that the vast majority of directly-transmitted pathogens have a very low virulence (\<0.1 % mortality per infection), while elevated and high virulence is much more common among vector-borne pathogens. Interestingly, the virulence of vector-borne pathogens inside the mobile vector that is responsible for disease transmission is often negligible, because the mobility of the intermediate host is critical for pathogen fitness.
+Costs associated with virulence can also be mitigated through vector-borne transmission, where an intermediate host carries and transmits a pathogen to a susceptible individual. Blood-feeding arthropods are particularly common disease vectors; they transmit many diseases relevant for human health. For example, mosquitoes are intermediate hosts for malaria, dengue, and zika, sand flies transmit leishmaniasis, hemipterans carry Chagas disease, and ticks spread Lyme disease, among many others. A comparison of virulence between diseases with different modes of transmission indicatesd that the vast majority of directly-transmitted pathogens have a very low virulence (\<0.1 % mortality per infection), while elevated and high virulence is much more common among vector-borne pathogens. Interestingly, the virulence of vector-borne pathogens inside the mobile vector that is responsible for disease transmission is often negligible, because the mobility of the intermediate host is critical for pathogen fitness.
 
 In summary, trade-offs between pathogen reproduction and transmission explain the evolution of intermediate levels of virulence. Low virulence can evolve when decreases in host mobility and fitness also reduce pathogen transmission. However, if pathogens do not need "help" from their hosts to infect susceptible individuals, either because they can survive outside of the host or they can be transmitted by a vector, then there is little cost associated with killing the host, and high virulence may not be selected against.
 
@@ -215,7 +215,7 @@ HIT=1-\frac{1}{R_0}=1-\frac{⍺+ν}{β} (\#eq:47)
 ```
 Since HIT is directly dependent on *R*~0~, diseases with a higher *R*~0~ require higher rates of vaccination (Figure \@ref(fig:hit)). However, once HIT is reached and the pathogen's *R*~0~ is smaller than 1, the phenomenon of "herd immunity" emerges. Since a pathogen can no longer spread in a population that has reached HIT, even individuals that are not vaccinated by the pathogen experience a significant reduction in the likelihood of infection. This is important from a public health perspective because comprehensive vaccination of eligible individuals helps to protect vulnerable segments of the population that do not have the privilege of immunization, including young children and immunocompromised people.
 
-```{r hit, echo=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, out.width='100%', fig.cap="Heard immunity threshold (HIT) as a function of a pathogen's *R*<sub>0</sub>. Values for influenza A, polio, chicken and smallpox, as well as measles are indicated by gray lines."}
+```{r hit, echo=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, out.width='100%', fig.cap="Heard immunity threshold (HIT) as a function of a pathogen's *R*<sub>0</sub>. Values for influenza A, polio, chicken and smallpox, as well as measles are indicatesd by gray lines."}
 r0 <- seq(1,20, by=0.1)
 pc <- 1-(1/r0)
 vaxrates <- data.frame(r0,pc)
@@ -350,7 +350,7 @@ Given the cost of antibiotic resistance, a primary defense against the spread of
 ```{r sucs, echo=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, out.width='100%', fig.cap="Prevalence of antibiotic resistant *Streptococcus* species in Belgium. After restructions were put on antibiotic use in the year 2000, the prelavence of resistant strains started to drop. [Data](data/13_endabio.csv) from Goossens et al. (2008)."}
 sucs <- read.csv("data/13_endabio.csv")
 
-ggplot(sucs, aes(x=year, y=resistent, group=group, color=antibiotic, shape=pathogen))+
+ggplot(sucs, aes(x=year, y=resistant, group=group, color=antibiotic, shape=pathogen))+
     geom_rect(aes(xmin = 2000, xmax = 2007.5, ymin = 0, ymax = 37), fill="lightgray", color=NA)+
     geom_point()+
     geom_line()+
@@ -507,7 +507,7 @@ summary(final.data)
 
 -   Ewald PW (1991) [Waterborne transmission and the evolution of virulence among gastrointestinal bacteria](https://www.cambridge.org/core/journals/epidemiology-and-infection/article/waterborne-transmission-and-the-evolution-of-virulence-among-gastrointestinal-bacteria/295EB4F5E51B7AA0D946C27973053725). *Epidemiology & Infection* 106: 83--119.
 
--   Goossens H, Coenen S, Costers M, De Corte S, De Sutter A, Gordts B, Struelens M (2008) [Achievements of the Belgian antibiotic policy coordination committee (BAPCOC)](https://www.eurosurveillance.org/content/10.2807/ese.13.46.19036-en). *Euro Surveillence* 13: 1-4.
+-   Goossens H, Coenen S, Costers M, De Corte S, De Sutter A, Gordts B, Struelens M (2008) [Achievements of the Belgian antibiotic policy coordination committee (BAPCOC)](https://www.eurosurveillance.org/content/10.2807/ese.13.46.19036-en). *Euro Surveillance* 13: 1-4.
 
 -   Herre EA (1993) [Population structure and the evolution of virulence in nematode parasites of fig wasps](https://www.science.org/doi/abs/10.1126/science.259.5100.1442). *Science* 259: 1442--1445.
 

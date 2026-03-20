@@ -79,7 +79,7 @@ p1 <- as.data.frame(replicate(1000,rbinom(1, size=2*N1, prob=p)/(2*N1)))
 p2 <- as.data.frame(replicate(1000,rbinom(1, size=2*N2, prob=p)/(2*N2)))
 ```
 
-```{r random, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Observed distributions of allele frequencies by randomly selecting alleles (*A* or *a*) from a pool with equal allele  frequencies (*p*=0.5). The deviation from theoretical expectations are much larger for the small population (*N*=38) than for the larger population (*N*=1,000). This illustrates how the strenth of genetic drift declines as a function of population size."}
+```{r random, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Observed distributions of allele frequencies by randomly selecting alleles (*A* or *a*) from a pool with equal allele  frequencies (*p*=0.5). The deviation from theoretical expectations are much larger for the small population (*N*=38) than for the larger population (*N*=1,000). This illustrates how the strength of genetic drift declines as a function of population size."}
 
 pres <- cbind(p1,p2)
 names(pres) <- c("p1", "p2")
@@ -150,7 +150,7 @@ ggplot(res, aes(x=Nes, y=Q))+
     scale_x_continuous(breaks=c(-5,-2.5,-1,0,1,2.5,5))+
     scale_y_continuous(breaks=c(0,0.5,1,1.5,2.5,5))+ 
     xlab("2*Ne*s")+
-    ylab("Probability of fixation, lamda (*1/2Ne)")+
+    ylab("Probability of fixation, lambda (*1/2Ne)")+
     theme_classic()
 ```
 
@@ -360,7 +360,7 @@ Hence, for a bi-allelic locus with allele frequencies p and q, expected heterozy
 H_E = 1-(p^2 + q^2) (\#eq:35)
 \end{align}
 ```
-*H*~E~ can range from zero (when a population is fixed for a single allele) to almost 1 (when a locus has a large number of alleles with the same frequency). In practice, we can apply expected heterozygosity as a null model for inbreeding. Based on population level genotype data, we can calculate observed heterozygosity (*H*~O~) and allele frequencies, which allow us to also calculate expected heterozygosity (*H*~E~). If *H*~E~=*H*~O~, the observed heterozygosity matches the theoretical predictions, meaning that all Hardy-Weinberg assumptions are met. If *H*~E~≠*H*~O~, some evolutionary force must be acting on the particular locus. Most commonly, *H*~E~\>\>*H*~O~ can be an indicator of inbreeding in a population.
+*H*~E~ can range from zero (when a population is fixed for a single allele) to almost 1 (when a locus has a large number of alleles with the same frequency). In practice, we can apply expected heterozygosity as a null model for inbreeding. Based on population level genotype data, we can calculate observed heterozygosity (*H*~O~) and allele frequencies, which allow us to also calculate expected heterozygosity (*H*~E~). If *H*~E~=*H*~O~, the observed heterozygosity matches the theoretical predictions, meaning that all Hardy-Weinberg assumptions are met. If *H*~E~≠*H*~O~, some evolutionary force must be acting on the particular locus. Most commonly, *H*~E~\>\>*H*~O~ can be an indicateor of inbreeding in a population.
 
 The degree of inbreeding is often quantified based on many loci in the genome, not just one. For *m* loci, genome-wide heterozygosity (*F*) is:
 
@@ -415,7 +415,7 @@ In natural populations, evidence for inbreeding comes from feral sheep on the is
 knitr::include_graphics('images/soay.jpg')
 ```
 
-```{r inreedingsheep, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Relationship between inbreeding and survival in a feral population of Soay sheep. Survival of sheep is strongly density dependent, as indicated by the lower average survival of individuals at medium and high densities (right graph). Genetic analyses also revealed low to moderate levels of inbreeding, as estimated by a multi-locus coefficient of inbreeding [see Equation (6.14)] (top graph). Finally, survival at medium and high densities depends on the degree of inbreeding (left graph).  [Data](data/6_inbreeding.csv) from Pemberton et al. (2017)."}
+```{r inreedingsheep, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Relationship between inbreeding and survival in a feral population of Soay sheep. Survival of sheep is strongly density dependent, as indicatesd by the lower average survival of individuals at medium and high densities (right graph). Genetic analyses also revealed low to moderate levels of inbreeding, as estimated by a multi-locus coefficient of inbreeding [see Equation (6.14)] (top graph). Finally, survival at medium and high densities depends on the degree of inbreeding (left graph).  [Data](data/6_inbreeding.csv) from Pemberton et al. (2017)."}
 inbred.wild <- read.csv("data/6_inbreeding.csv")
 inbred.wild <- inbred.wild[complete.cases(inbred.wild), ]
 
