@@ -52,7 +52,7 @@ library(gridExtra)
 library(RColorBrewer)
 ```
 
-```{r herit, echo=FALSE, fig.cap="The slope of parent-offspring regressions reveal the degree of heritability. A slope of one indicates high heritability (blue line), while a slope of zero indicates no heritability (orange line). Intermediate slopes indicates that genetic and environmental effects both impact trait variation in a population.", fig.height=5, fig.width=5}
+```{r herit, echo=FALSE, fig.cap="The slope of parent-offspring regressions reveal the degree of heritability. A slope of one indicates high heritability (blue line), while a slope of zero indicates no heritability (orange line). Intermediate slopes indicate that genetic and environmental effects both impact trait variation in a population.", fig.height=5, fig.width=5}
 x <- c(0,1)
 y1 <- c(0,1)
 y2 <- c(.5,.5)
@@ -112,7 +112,7 @@ Fitness is relative in the sense that it is typically expressed for one phenotyp
 
 The core strength of Darwin's postulates is that they can be treated as hypotheses, and we can use data from natural populations to test whether evolution by natural selection is happening. In this section, we will once again retrace the steps of Rosemary and Peter Grant. In [Chapter 2](evidence-for-evolution.html), you explored their data on beak size variation of the *Geospiza fortis* population on Daphne Major Island (Figure \@ref(fig:timeseries)). During a massive drought associated with an El Niño in 1977, there was a substantial increase of beak size over a short period of time. But does this change represent an evolutionary change caused by natural selection? If so, we would predict (1) observable variation in beak size in the *G. fortis* population, (2) that some of the beak size variation is heritable, (3) that the finches on Daphne Major are in fact facing a struggle for existence, and (4) that survival in the finch population is not random but related to beak size. Last but not least, we would also predict differences in beak size across generations.
 
-```{r timeseries, echo=FALSE, fig.cap="Variation of relative beak size in *G. fortis* on Daphne Major Island  from 1972-1995. Positive numbers indicates larger beaks and negative number represent smaller beaks."}
+```{r timeseries, echo=FALSE, fig.cap="Variation of relative beak size in *G. fortis* on Daphne Major Island  from 1972-1995. Positive numbers indicate larger beaks and negative number represent smaller beaks."}
 time.series <- read.csv("data/3_finches_time_series.csv")
 
 ggplot(time.series, aes(x=year, y=rel.beak.size)) +

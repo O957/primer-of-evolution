@@ -76,7 +76,7 @@ Human populations have undoubtedly evolved a wide variety of adaptations to loca
 
 : Table 12.2: Examples of local adaptation in human populations based on Rees et al. (2020).
 
-```{r amylase, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=8, out.width='100%', fig.cap="A. AMY1 gene copy number in human populations with a high starch diet and populations with a low starch diet. Triangles indicates median copy numbers. [Data](data/12_amylase1.csv) from Perry et al. (2007). B. Copy number variation of AMY1 is directly correlated with the amount amylase protein present in the saliva of individuals, indicating that copy number variation likely impacts function. [Data](data/12_amylase2.csv) from Perry et al. (2007)."}
+```{r amylase, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=8, out.width='100%', fig.cap="A. AMY1 gene copy number in human populations with a high starch diet and populations with a low starch diet. Triangles indicate median copy numbers. [Data](data/12_amylase1.csv) from Perry et al. (2007). B. Copy number variation of AMY1 is directly correlated with the amount amylase protein present in the saliva of individuals, indicating that copy number variation likely impacts function. [Data](data/12_amylase2.csv) from Perry et al. (2007)."}
 amy1 <- read.csv("data/12_amylase1.csv")
 amy1$diet <- factor(amy1$diet, levels = c("Low starch", "High starch"))
 amy2 <- read.csv("data/12_amylase2.csv")
