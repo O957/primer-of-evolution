@@ -58,7 +58,7 @@ Phenotypic plasticity is the ability of a genotype to express different phenotyp
 knitr::include_graphics('images/rana.jpg')
 ```
 
-```{r plastarabis, echo=FALSE, message=FALSE, warning=FALSE, fig.height=8/2.7, fig.width=8, fig.cap="Phenotypic plasticity in *Arabis alpina*. The graph shows mean trait values for different populations (in different colors) that were either grown at low or high elevation. Each population was composed of multiple families that were represented at both locations. Differences between locations are more pronounced than differences among populations, indicateing the influence of environmentally-dependent phenotypic plasticity. [Data](data/8_plasticity.csv) from de Villemereuil et al. (2018)."}
+```{r plastarabis, echo=FALSE, message=FALSE, warning=FALSE, fig.height=8/2.7, fig.width=8, fig.cap="Phenotypic plasticity in *Arabis alpina*. The graph shows mean trait values for different populations (in different colors) that were either grown at low or high elevation. Each population was composed of multiple families that were represented at both locations. Differences between locations are more pronounced than differences among populations, indicating the influence of environmentally-dependent phenotypic plasticity. [Data](data/8_plasticity.csv) from de Villemereuil et al. (2018)."}
 plast <- read.csv("data/8_plasticity.csv", na.strings=c("","NA"))
 plast$tfl <- as.numeric(as.character(plast$tfl, na.rm = TRUE))
 plast.mean <- aggregate(cbind(tfl, area, h.base) ~ Plot + Population, data = plast, mean, na.rm = TRUE)
