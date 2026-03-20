@@ -86,7 +86,7 @@ Finally, putatively non-functional genomic regions (pseudogenes and repeat seque
 
 Inversions are regions of chromosomes that are flipped in direction. These mutations do not change the amount or kind of genetic material in the genome, only its sequential arrangement (Figure \@ref(fig:inversion)).
 
-```{r inversion, echo=FALSE, out.width='100%', fig.cap = "Inversions are caused when double breaks in the DNA (indicatesd by asterisks) are fixed upon a central element flipping in direction."}
+```{r inversion, echo=FALSE, out.width='100%', fig.cap = "Inversions are caused when double breaks in the DNA (indicated by asterisks) are fixed upon a central element flipping in direction."}
 knitr::include_graphics('images/inversion.png')
 ```
 

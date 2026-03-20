@@ -702,9 +702,9 @@ h^2=\frac{R}{S}=\frac{O^*-\overline{O}}{P^*-\overline{P}} \tag{8.6}
 <p>You can imagine how <em>R</em> will increase in this example as the slope of the best-fit line increases, reaching <em>S</em> when <em>h</em><sup>2</sup> equals 1. Similarly, <em>R</em> will decrease as you imagine the slope of the regression line decreasing, eventually reaching 0 when <em>h</em><sup>2</sup> equals 0.</p>
 <p>Ultimately, the response to selection represents the per generation change in the average value of a population’s quantitative trait. Like the selection differential, it is measured in the same unit used to quantify trait variation. Together, the quantification of narrow-sense heritability, the selection differential, and the application of the breeder’s equation provide a critical tool for studying the evolution of polygenic traits, without the need to identify genes underlying phenotypic trait expression.</p>
 <div class="figure"><span style="display:block;" id="fig:breeder"></span>
-<img src="Primer2Evolution_files/figure-html/breeder-1.png" alt="The response to selection (*R*) is proportional to the product of th selection differential (*S*) and narrow-sense heritability (as indicatesd by the slope of the best-fit line)." width="100%" />
+<img src="Primer2Evolution_files/figure-html/breeder-1.png" alt="The response to selection (*R*) is proportional to the product of th selection differential (*S*) and narrow-sense heritability (as indicated by the slope of the best-fit line)." width="100%" />
 <p class="caption">
-Figure 8.7: The response to selection (<em>R</em>) is proportional to the product of th selection differential (<em>S</em>) and narrow-sense heritability (as indicatesd by the slope of the best-fit line).
+Figure 8.7: The response to selection (<em>R</em>) is proportional to the product of th selection differential (<em>S</em>) and narrow-sense heritability (as indicated by the slope of the best-fit line).
 </p>
 </div>
 </div>
@@ -812,9 +812,9 @@ Figure 8.13: Beach mice exhibit much lighter coat colors than relatives in grass
 <p>Before we actually take a stab at QTL mapping, let’s explore the raw data. The <code>plotMap()</code> function graphs a genetic (or linkage) map, which shows the position of loci (markers) relative to each other. In well-assembled genomes, linkage blocks correspond to the actual chromosomes, and the linkage map shows the chromosomal location of each marker with a horizontal dash. The dataset we are looking at contains genotype information for each marker present in our genetic map. As you can see in the case of the bed bugs, some chromosomes are larger than others, and some chromosomal regions vary in marker density.</p>
 <div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="the-evolution-of-quantitative-traits.html#cb123-1" tabindex="-1"></a><span class="fu">plotMap</span>(bedbugs, <span class="at">show.marker.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-18"></span>
-<img src="Primer2Evolution_files/figure-html/unnamed-chunk-18-1.png" alt="Genetic map of markers included in the `bedbug` data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicatesd with horizontal dashes along the y-axis." width="100%" />
+<img src="Primer2Evolution_files/figure-html/unnamed-chunk-18-1.png" alt="Genetic map of markers included in the `bedbug` data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicated with horizontal dashes along the y-axis." width="100%" />
 <p class="caption">
-Figure 8.14: Genetic map of markers included in the <code>bedbug</code> data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicatesd with horizontal dashes along the y-axis.
+Figure 8.14: Genetic map of markers included in the <code>bedbug</code> data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicated with horizontal dashes along the y-axis.
 </p>
 </div>
 <p>Note that changing the <code>show.marker.names</code> argument to <code>TRUE</code> will plot the name of each gene onto the genetic map. Since there is a large number of loci that make for one confusing graph, I set it to <code>FALSE</code>.</p>

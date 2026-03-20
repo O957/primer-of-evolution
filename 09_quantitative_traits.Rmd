@@ -217,7 +217,7 @@ You can imagine how *R* will increase in this example as the slope of the best-f
 
 Ultimately, the response to selection represents the per generation change in the average value of a population's quantitative trait. Like the selection differential, it is measured in the same unit used to quantify trait variation. Together, the quantification of narrow-sense heritability, the selection differential, and the application of the breeder's equation provide a critical tool for studying the evolution of polygenic traits, without the need to identify genes underlying phenotypic trait expression.
 
-```{r breeder, echo=FALSE, out.width='100%', message=FALSE, warning=FALSE, fig.cap="The response to selection (*R*) is proportional to the product of th selection differential (*S*) and narrow-sense heritability (as indicatesd by the slope of the best-fit line)."}
+```{r breeder, echo=FALSE, out.width='100%', message=FALSE, warning=FALSE, fig.cap="The response to selection (*R*) is proportional to the product of th selection differential (*S*) and narrow-sense heritability (as indicated by the slope of the best-fit line)."}
 response <- data.frame(cbind(x,y2))
 response$fitness <- ifelse(response$x<33, 0, 1)
 response$fitness2 <- ifelse(response$fitness == 0, "Not successful", "Successful")
@@ -431,7 +431,7 @@ As you can see, successfully importing the data does not only create a new objec
 
 Before we actually take a stab at QTL mapping, let's explore the raw data. The `plotMap()` function graphs a genetic (or linkage) map, which shows the position of loci (markers) relative to each other. In well-assembled genomes, linkage blocks correspond to the actual chromosomes, and the linkage map shows the chromosomal location of each marker with a horizontal dash. The dataset we are looking at contains genotype information for each marker present in our genetic map. As you can see in the case of the bed bugs, some chromosomes are larger than others, and some chromosomal regions vary in marker density.
 
-```{r out.width='100%', fig.cap="Genetic map of markers included in the `bedbug` data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicatesd with horizontal dashes along the y-axis."}
+```{r out.width='100%', fig.cap="Genetic map of markers included in the `bedbug` data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicated with horizontal dashes along the y-axis."}
 plotMap(bedbugs, show.marker.names = FALSE)
 ```
 
