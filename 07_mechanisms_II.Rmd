@@ -360,7 +360,7 @@ Hence, for a bi-allelic locus with allele frequencies p and q, expected heterozy
 H_E = 1-(p^2 + q^2) (\#eq:35)
 \end{align}
 ```
-*H*~E~ can range from zero (when a population is fixed for a single allele) to almost 1 (when a locus has a large number of alleles with the same frequency). In practice, we can apply expected heterozygosity as a null model for inbreeding. Based on population level genotype data, we can calculate observed heterozygosity (*H*~O~) and allele frequencies, which allow us to also calculate expected heterozygosity (*H*~E~). If *H*~E~=*H*~O~, the observed heterozygosity matches the theoretical predictions, meaning that all Hardy-Weinberg assumptions are met. If *H*~E~≠*H*~O~, some evolutionary force must be acting on the particular locus. Most commonly, *H*~E~\>\>*H*~O~ can be an indicateor of inbreeding in a population.
+*H*~E~ can range from zero (when a population is fixed for a single allele) to almost 1 (when a locus has a large number of alleles with the same frequency). In practice, we can apply expected heterozygosity as a null model for inbreeding. Based on population level genotype data, we can calculate observed heterozygosity (*H*~O~) and allele frequencies, which allow us to also calculate expected heterozygosity (*H*~E~). If *H*~E~=*H*~O~, the observed heterozygosity matches the theoretical predictions, meaning that all Hardy-Weinberg assumptions are met. If *H*~E~≠*H*~O~, some evolutionary force must be acting on the particular locus. Most commonly, *H*~E~\>\>*H*~O~ can be an indicator of inbreeding in a population.
 
 The degree of inbreeding is often quantified based on many loci in the genome, not just one. For *m* loci, genome-wide heterozygosity (*F*) is:
 
